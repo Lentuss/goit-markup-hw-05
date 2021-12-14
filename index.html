@@ -25,7 +25,7 @@
           <a href="#" class="logo"><span class="logo-part">Web</span>Studio</a>
           <nav>
             <ul class="nav-list">
-              <li><a class="nav-link link-color-change curent" href="#">Студия</a></li>
+              <li><a class="nav-link link-color-change curent" href="#" width="48px">Студия</a></li>
               <li>
                 <a class="nav-link link-color-change" href="./portfolio.html">Портфолио</a>
               </li>
@@ -59,7 +59,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -121,9 +121,11 @@
           <ul class="what-we-do-list">
             <li>
               <img src="./images/img1what.jpg" alt="человек печатает на клавиатуре" width="370" />
+              <p class="label">Десктопные приложения</p>
             </li>
             <li>
               <img src="./images/img2what.jpg" alt="женщина держит в реках телефон" width="370" />
+              <p class="label">Мобильные приложения</p>
             </li>
             <li>
               <img
@@ -131,6 +133,7 @@
                 alt="планшет со цветовым спектром на экране"
                 width="370"
               />
+              <p class="label">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -302,7 +305,7 @@
           </ul>
         </div>
       </section>
-      <!-- clients section -->
+      <!-- Clients section -->
       <section class="clients-section section">
         <div class="container">
           <h2 class="clients-title title-color">Постоянные клиенты</h2>
@@ -405,5 +408,17 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button class="close-modal" data-modal-close>
+          <svg width="11px" height="11px">
+            <use href="./images/icons.svg#close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
